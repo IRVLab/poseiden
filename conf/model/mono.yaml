@@ -1,0 +1,7 @@
+name: mono
+backbone: gelanS
+
+# for the transformer module
+embedded_dim: 256
+num_layers: 4
+num_heads: 8

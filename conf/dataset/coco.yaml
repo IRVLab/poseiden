@@ -1,0 +1,12 @@
+name: coco
+root: 'data/coco/'
+num_joints: 17
+
+# augmentation configuration
+aug:
+  rotation_factor: 45
+  scale_factor: 0.35
+  translate_factor: 0
+  horizontal_flip: true
+  color_jitter: true
+  hide_and_seek: false

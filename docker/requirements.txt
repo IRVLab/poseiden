@@ -1,0 +1,11 @@
+pycocotools
+tensorboard
+opencv-python
+matplotlib
+scikit-learn
+tqdm
+pyyaml
+einops
+onnx
+onnxruntime-gpu==1.18.0
+thop

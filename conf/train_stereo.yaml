@@ -1,0 +1,29 @@
+defaults:
+  - _self_
+  - dataset: mads
+  - model: stereo
+  - hydra: default.yaml
+
+# Path for saving weights, output, and logs'
+path:
+  output_dir: 'output'
+  log_dir: 'logs'
+
+name: ???
+
+# Hyperparameters
+batch_size: 32
+num_epochs: 50
+learning_rate: 1e-3
+scheduler:  # MultiStepLR
+  milestones:
+  - 40
+  gamma: 0.1
+
+# Training configurations
+image_size:
+- 256
+- 256
+
+gpu: 0  # GPU ID
+num_workers: 8  # Number of workers for data loading

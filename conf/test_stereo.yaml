@@ -1,0 +1,18 @@
+defaults:
+  - _self_
+  - dataset: mads
+  - model: stereo
+  - hydra: default.yaml
+
+# Hyperparameters
+batch_size: 32
+
+image_size:
+- 256
+- 256
+
+device: 0  # GPU ID
+num_workers: 8  # Number of workers for data loading
+
+model_weight: ???
+visualize: False

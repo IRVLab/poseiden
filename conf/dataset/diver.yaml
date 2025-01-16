@@ -1,0 +1,12 @@
+name: diver
+root: 'data/IRVLab/diver_pose'
+num_joints: 12
+
+# augmentation configurations
+aug:
+  scale_factor: 0.35
+  translate_factor: 0.1
+  horizontal_flip: true
+  vertical_flip: false
+  color_jitter: false
+  hide_and_seek: false

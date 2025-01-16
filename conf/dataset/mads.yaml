@@ -1,0 +1,12 @@
+name: mads
+root: 'data/MADS_extract'
+num_joints: 19
+
+# augmentation configurations
+aug:
+  scale_factor: 0.25
+  translate_factor: 0.1
+  horizontal_flip: true
+  vertical_flip: false
+  color_jitter: false
+  hide_and_seek: false

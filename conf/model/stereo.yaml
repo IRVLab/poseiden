@@ -1,0 +1,14 @@
+name: stereo
+backbone: gelanS
+# whether to load pretrained encoder
+pretrained: ''
+
+# for the disparity estimation module
+dmax: 30  # maximum value in the pre-defined disparity range
+dmin: 5  # minimum value in the pre-defined disparity range
+num_disp: 50  # number of disparity values in the pre-defined disparity range
+
+# for the transformer module
+embedded_dim: 256
+num_layers: 4
+num_heads: 8
