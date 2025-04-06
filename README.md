@@ -1,6 +1,6 @@
 # Poseiden
 
-This is the official code release for our paper "". **[[Paper]()]  [[Project Page](https://human-pose-underwater-3d.github.io)]**
+This is the official code release for our paper "Stereo-Based 3D Human Pose Estimation for Underwater Robots Without 3D Supervision". **[[Paper](https://ieeexplore.ieee.org/document/10947328)]  [[Project Page](https://human-pose-underwater-3d.github.io)]**
 
 <img src="images/demo_mads.gif" alt="demo_mads" width="600"/>
 
@@ -11,9 +11,9 @@ This repository is the implementation of the stereo-based 3D human pose estimati
 ## Table of Contents
 
 - [Environment Setup](#EnvironmentSetup)
-- [Datasets](#StereoFormat)
-- [Train](#Yolov8Format)
-- [Test]()
+- [Datasets](#Datasets)
+- [Train](#Train)
+- [Test](#Test)
 
 <a name="EnvironmentSetup"></a>
 ## Environment Setup
@@ -30,6 +30,7 @@ This repository is the implementation of the stereo-based 3D human pose estimati
     bash run_container.sh
     ```
 
+<a name="Datasets"></a>
 ## Datasets
 
 ### COCO (For Model Pretrain)
@@ -70,7 +71,7 @@ This repository is the implementation of the stereo-based 3D human pose estimati
     ```
     python helpers/display_data_3d.py --config-name train_stereo dataset=diver
     ```
-    
+<a name="Train"></a>
 ## Train
 
 We use the Hydra library to manage configurations. For more information, please refer to the [Hydra documentation](https://hydra.cc/docs/intro/).
@@ -106,6 +107,7 @@ python train.py \
 
 * Note that you can also set ```model.pretrained=""``` to avoid loading weights from pretrained model.
 
+<a name="Test"></a>
 ## Test
 **Make sure the mode configuration (dmin, dmax, backbone, etc.) used for testing are same for training.**
 
@@ -138,13 +140,22 @@ python test.py \
         yolo_weight=<PATH_TO_ONNX_MODEL>
     ```
 * Note: model weight is also provided [here](https://drive.google.com/drive/folders/1nCwcSAPVvDDZbV4ItBoK5X6MvPaQ-cxH?usp=sharing) for demo
-* The YOLOv7 onnx model is used here to locate the diver and crop the region of it from the entire image. Please refer to [DiverPose-AutoRefinement]() for more details or download the model weight [here](https://drive.google.com/file/d/1nc-is6bRzSHgARuEppfmTGcdE6hX_N8q/view?usp=share_link) for convenience.
+* The YOLOv8 onnx model is used here to locate the diver and crop the region of it from the entire image. Please refer to [DiverPose-AutoRefinement]() for more details or download the model weight [here](https://drive.google.com/file/d/1nc-is6bRzSHgARuEppfmTGcdE6hX_N8q/view?usp=share_link) for convenience.
 
 
 ## Acknowledgments
 
-Several functions in this repository are adapted and modified from [TransPose](https://github.com/yangsenius/TransPose), [YOLOv7](https://github.com/WongKinYiu/yolov7), and [mmpose](https://github.com/open-mmlab/mmpose).
+Several functions in this repository are adapted and modified from [TransPose](https://github.com/yangsenius/TransPose) and [mmpose](https://github.com/open-mmlab/mmpose).
 
 ## Citation
 
 If you use this code or the DiverPose dataset for your research, please cite:
+```
+@ARTICLE{10947328,
+  author={Wu, Ying-Kun and Sattar, Junaed},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Stereo-Based 3D Human Pose Estimation for Underwater Robots Without 3D Supervision}, 
+  year={2025},
+  pages={1-8},
+  doi={10.1109/LRA.2025.3557235}}
+```
