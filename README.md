@@ -1,6 +1,6 @@
 # Poseiden
 
-This is the official code release for our paper "Stereo-Based 3D Human Pose Estimation for Underwater Robots Without 3D Supervision". **[[Paper](https://ieeexplore.ieee.org/document/10947328)]  [[Project Page](https://human-pose-underwater-3d.github.io)]**
+This is the official code release for our paper "**Stereo-Based 3D Human Pose Estimation for Underwater Robots Without 3D Supervision**". **[[Paper](https://ieeexplore.ieee.org/document/10947328)]  [[Project Page](https://human-pose-underwater-3d.github.io)]**
 
 <img src="images/demo_mads.gif" alt="demo_mads" width="600"/>
 
