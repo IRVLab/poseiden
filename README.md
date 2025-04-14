@@ -156,6 +156,8 @@ If you use this code or the DiverPose dataset for your research, please cite:
   journal={IEEE Robotics and Automation Letters}, 
   title={Stereo-Based 3D Human Pose Estimation for Underwater Robots Without 3D Supervision}, 
   year={2025},
-  pages={1-8},
+  volume={10},
+  number={5},
+  pages={5002-5009},
   doi={10.1109/LRA.2025.3557235}}
 ```
